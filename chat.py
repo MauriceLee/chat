@@ -19,3 +19,7 @@ for line in chat:
         output.append('Tom: ' + line)
 
 print(output)
+
+with open('output.txt', 'w', encoding = 'utf-8') as f:
+    for out in output:
+        f.write(out + '\n')
