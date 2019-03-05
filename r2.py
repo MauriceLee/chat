@@ -5,6 +5,7 @@ def read_file(filename):
             chat.append(line.strip())
     return chat
 
+
 def convert(chat):
     person = None
     allen_word_count = 0
@@ -47,9 +48,11 @@ def write_file(filename, output):
         for out in output:
             f.write(out + '\n')
 
+
 def main():
     chat = read_file('-LINE-Viki.txt')
     output = convert(chat)
     # write_file('output.txt', output)
+
 
 main()
